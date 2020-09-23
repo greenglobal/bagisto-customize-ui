@@ -16,10 +16,7 @@ This package allows customizing UI in Admin interface for Bagisto.
 ```php
 composer dump-autoload
 ```
-5. Hack core Bagisto:
-- Add `<script type="text/javascript" src="{{ asset('vendor/ggphp/ui/assets/js/ui.js') }}"></script>`
-to body section `packages/Webkul/Admin/src/Resources/views/layouts/master.blade.php`
-6. Run the following command
+
 ```php
 php artisan vendor:publish --all --force
 ```

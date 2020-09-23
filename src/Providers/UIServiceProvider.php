@@ -16,5 +16,9 @@ class UIServiceProvider extends ServiceProvider {
         $this->publishes([
             __DIR__ . '/../../publishable/assets' => public_path('vendor/ggphp/ui/assets'),
         ], 'public');
+
+        $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'ggphp-ui');
+
+        $this->app->register(EventServiceProvider::class);
     }
 }
