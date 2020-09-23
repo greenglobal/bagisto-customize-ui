@@ -1,6 +1,6 @@
 # Customize UI README
-This package allows customizing UI in admin interface for Bagisto
-Features:
+This package allows customizing UI in Admin interface for Bagisto.
+## Features
 - Custom back button in admin interface of bagisto
 - Create back button component
 ## Requirements
@@ -17,10 +17,17 @@ Features:
 composer dump-autoload
 ```
 5. Hack core Bagisto:
-- Add **<script type="text/javascript" src="{{ asset('vendor/ggphp/ui/assets/js/ui.js') }}"></script>**
-to `<body>` section **packages/Webkul/Admin/src/Resources/views/layouts/master.blade.php**
+- Add `<script type="text/javascript" src="{{ asset('vendor/ggphp/ui/assets/js/ui.js') }}"></script>`
+to body section `packages/Webkul/Admin/src/Resources/views/layouts/master.blade.php`
 6. Run the following command
 ```php
 php artisan vendor:publish --all --force
 ```
-# bagisto-customize-ui
+
+## Guide
+
+### Use back button component
+- Add `<back-button></back-button>` to blade file you need
+```php
+php artisan vendor:publish --all --force
+```

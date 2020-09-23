@@ -1,0 +1,30 @@
+{
+    "name": "greenglobal/bagisto-customize-ui",
+    "description": "UI Customization package for bagisto",
+    "type": "library",
+    "keywords": ["ui", "ui customization", "bagisto ui customization"],
+    "homepage": "https://github.com/greenglobal/bagisto-customize-ui",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HUNG HUYNH BA MANH",
+            "email": "huynhbamanhhungg@gmail.com",
+            "homepage": "https://github.com/HuynhHungManh",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "GGPHP\\UI\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GGPHP\\UI\\Providers\\UIServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
