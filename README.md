@@ -24,7 +24,8 @@ php artisan vendor:publish --all --force
 ## Guide
 
 ### Use back button component
-- Add `<back-button></back-button>` to blade file you need
+- Add `<back-button baseUrl="{{ $baseUrl }}"></back-button>` to blade file you need, `$baseUrl` is root url.
+- Run the following command
 ```php
 php artisan vendor:publish --all --force
 ```
