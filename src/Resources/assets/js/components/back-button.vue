@@ -1,14 +1,14 @@
 <template>
-    <i @click="backLink" class="icon angle-left-icon back-link"></i>
+    <a :href="referer" class="icon angle-left-icon back-link"></a>
 </template>
 
 <script>
     export default {
         props: ['baseUrl'],
 
-        methods: {
-            backLink () {
-                window.location = history.length > 1 ? document.referrer : this.baseUrl;
+        data() {
+            return {
+                referer: history.length > 1 ? document.referrer : this.baseUrl
             }
         }
     }
