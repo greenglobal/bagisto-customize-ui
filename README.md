@@ -18,7 +18,7 @@ composer dump-autoload
 ```
 
 ```php
-php artisan vendor:publish --all --force
+php artisan vendor:publish --all
 ```
 
 ## Guide
@@ -27,5 +27,5 @@ php artisan vendor:publish --all --force
 - Add `<back-button baseUrl="{{ $baseUrl }}"></back-button>` to blade file you need, `$baseUrl` is root url.
 - Run the following command
 ```php
-php artisan vendor:publish --all --force
+php artisan vendor:publish --all
 ```
